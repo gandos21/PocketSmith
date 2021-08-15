@@ -1,6 +1,6 @@
 # Pocketsmith automation
 # Created based using REST APIs provided by Pocketsmith. Link to API documentation: https://developers.pocketsmith.com/
-#  G Yoga - gyalias@yogarajah.net
+#  Repository link: https://github.com/gandos21/PocketSmith
 import requests
 import json
 from WindowLayout import WindowFields as wf

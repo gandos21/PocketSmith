@@ -1,6 +1,6 @@
 # Window layout setup
 #  Created using PySimepleGUI package. Template from window panel was taken from https://pysimplegui.readthedocs.io/en/latest/cookbook/
-#  G Yoga - gyalias@yogarajah.net
+#  Repository link: https://github.com/gandos21/PocketSmith
 import PySimpleGUI as sg
 from datetime import date
 import json
