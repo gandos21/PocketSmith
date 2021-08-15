@@ -15,8 +15,9 @@ NEW_DATA_CHECK_INTERVAL = 600       # Time interval in s to get new data from Po
 
 # Main function to start gui panel
 def main():
-    if not ps.ReadDevKey():
+    if not ps.ReadDevKey():     # Read developer API key from external file. If key file doesn't exist, terminate script
         return
+
     # Get list of categories and accounts from Pocketsmith
     ps.LoadCategories()
     ps.LoadAccounts()
@@ -101,7 +102,7 @@ def main():
         if event == 'Post':
             ps.PostTransaction(values)
         if event == 'Get Trans':
-            pass
+            pass    # TODO
             #ps.GetAccountTransactions(values)
         if event == 'Delete Tran':
             ps.DeleteAccountTransaction(values)
@@ -380,6 +381,8 @@ def main():
                         if i > 1:
                             window[f'-TransGrid_SpacerRow_{r}-'].unhide_row()
 
+        if '-TransGridReject' in event:
+            pass        # Note: Functionality for Reject button is not implemented. Reject button from GUI panel may be removed if not required.
 
         # If any window element values changed, backup the values
         if values != fieldValuesCurrent:  # We against saved Master double copy and only update json when there's a difference.  Comparing two dictionaries  Ref: https://stackoverflow.com/a/40921229

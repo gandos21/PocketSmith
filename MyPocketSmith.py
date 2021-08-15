@@ -352,7 +352,7 @@ def CheckNewTransactionsForReapproval(UnconfirmedTrans):
     return UnconfirmedTrans
 
 
-# Delete a transaction using ID. Or multi test transaction deleting function
+# Function to delete a transaction using ID. Or any test transactions
 def DeleteAccountTransaction(GuiPanelValues):
     transactionId = GuiPanelValues[wf.TRANSACTION_ID]
     if isinstance(transactionId, str):
