@@ -1,5 +1,5 @@
 # PocketSmith
-Desktop program to review and approve transactions in PocketSmith
+Desktop program to review and approve PocketSmith transactions
 
 
 Developed with Python 3.7
