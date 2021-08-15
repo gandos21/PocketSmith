@@ -1,6 +1,6 @@
 # Project exclude paths
 /venv/
-logo.png
+*.png
 PanelDefaults.json
 ApprovedTransactions.json
 keyFile.json
