@@ -1,4 +1,11 @@
-# This is a GUI front end for Pocketsmith trasaction entry
+# Pocketsmith py automation for transaction approval
+#  This script was created to enhance new transactions confirmation process. Currently, transaction confirmation via PocketSmith doesn't provide a capability
+#  to make a double entry transaction. For example, when you make an ATM withdrawal it comes via bank sync for confirmation on bank account. However, if we need to make
+#  a matching transaction in Wallet account (manual account), we need to make a manual entry. Making manual entry is not intuitive via the standard web interface and it can be easily missed.
+#  One of the aim of this script is to provide 'Transfer To' capability to automatically make an opposing transaction in the other manual accounts (eg. Wallet, Super Savings, etc).
+#  When splitting transaction, providing separate Note text for each split transaction is also possible with this script.
+#
+# This file is the main entry point for the script.
 #  Created using PySimepleGUI package. Template from window panel was taken from https://pysimplegui.readthedocs.io/en/latest/cookbook/
 #  Repository link: https://github.com/gandos21/PocketSmith
 import PySimpleGUI as sg
