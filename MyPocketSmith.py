@@ -36,14 +36,14 @@ def ReadDevKey():
     try:  # If file exist, load data from file, otherwise start with a new history file
         with open(keyFile, 'r') as fp:
             apiKey = json.load(fp)['ApiKey']
-        if len(apiKey) != 128:      # Length of developer ksy is 128 bytes
+        if len(apiKey) != 128:      # Length of developer key is 128 bytes
             print('Invalid key length!')
             raise Exception
 
         headers['X-Developer-Key'] = apiKey
         post_headers['X-Developer-Key'] = apiKey
         return True
-    except:
+    except:     # Key file does not exist, create a new file with empty key
         keyDict = {}
         keyDict['ApiKey'] = ''
         try:    # Create an empty key file
@@ -53,7 +53,7 @@ def ReadDevKey():
             print(f'Error creating key file {keyFile}')
         else:
             # A developer key can be from Pocketsmith settings menu (Security & connections -> Manage developer keys)
-            print(f'Pocketsmith developer API key not found! Obtain and save a key in {keyFile}')
+            print(f'Pocketsmith developer API key not found! Obtain a key and save it in {keyFile}')
         return False
 
 
