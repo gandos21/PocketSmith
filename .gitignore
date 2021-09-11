@@ -4,3 +4,6 @@
 PanelDefaults.json
 ApprovedTransactions.json
 keyFile.json
+__pycache__/MyPocketSmith.cpython-37.pyc
+__pycache__/MyUtils.cpython-37.pyc
+__pycache__/WindowLayout.cpython-37.pyc
