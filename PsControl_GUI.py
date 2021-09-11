@@ -108,6 +108,7 @@ def main():
         ## Button events ##
         if event == 'Post':
             ps.PostTransaction(values)
+            
         if event == 'Get Trans':
             pass    # TODO
             #ps.GetAccountTransactions(values)
